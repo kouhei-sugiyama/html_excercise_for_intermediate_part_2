@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML中級編エクササイズその2</title>
+  </head>
+
+  <body>
+    <h1>フォームレッスン</h1>
+
+    <p>以下のフォームを埋めてください。(※は必須項目))</p>
+    <form action="">
+      <div>
+        <label for="username">※ユーザー名:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div>
+        <label for="password">※パスワード(6文字以上):</label>
+        <input type="password" id="password" name="password" required minlength="6">
+      </div>
+      <div>
+        ※性別:
+        <input type="radio" id="women" name="sex" value="female" required>
+        <label for="women">女性</label>
+
+        <input type="radio" id="men" name="sex" value="male" required>
+        <label for="men">男性</label>
+      </div>
+      <div>
+        ※生年月日:
+        <label for="year">年:</label>
+        <select name="year" id="year" required>
+          <option value="">---</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+        </select>
+
+        <label for="month">月:</label>
+        <select name="month" id="month" required>
+          <option value="">---</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="12">12</option>
+        </select>
+
+        <label for="day">日:</label>
+        <select name="day" id="day" required>
+          <option value="">---</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="31">31</option>
+        </select>
+      </div>
+      <div>
+        <label for="textbox">備考欄:</label>
+        <div>
+          <textarea name="text" id="textbox" cols="30" rows="10" required></textarea>
+        </div>
+      </div>
+      <div>
+        <input type="submit">
+      </div>
+    </form>
+  </body>
+
+</html>
